@@ -30,5 +30,12 @@ data class ProductEntity(
 
     @UpdateTimestamp
     @Column(name = "updated_at", nullable = false)
-    val updatedAt: ZonedDateTime
+    val updatedAt: ZonedDateTime,
+
+    @Column(name = "stock", nullable = false)
+    var stock: String,
+
+
+
+
 )
